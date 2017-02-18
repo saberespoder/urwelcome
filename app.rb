@@ -11,6 +11,7 @@ class URWelcome < Sinatra::Base
 
   post '/signup' do
     Member.create(name: params[:name], email: params[:email])
+    200
   end
 
   get '/images/:file' do
