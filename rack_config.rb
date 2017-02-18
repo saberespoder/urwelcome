@@ -1,7 +1,4 @@
 require 'sequel'
-require 'sprockets'
-require 'uglifier'
-require 'sass'
 require 'slim'
 
 if ENV['RACK_ENV'] == 'production'
