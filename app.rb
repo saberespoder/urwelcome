@@ -23,7 +23,11 @@ class URWelcome < Sinatra::Base
     send_file('./public/assets/images/'+params[:file], :disposition => 'inline')
   end
 
-  get '/assets/:file' do
-    send_file('./public/assets/'+params[:file], :disposition => 'inline')
+  get '/assets/stylesheets/:file' do
+    send_file('./public/assets/stylesheets'+params[:file], :disposition => 'inline')
+  end
+
+  get '/assets/javascripts/:file' do
+    send_file('./public/assets/javascripts'+params[:file], :disposition => 'inline')
   end
 end
