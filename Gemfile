@@ -9,10 +9,7 @@ gem 'honeybadger', '~> 2.0'
 gem 'sequel'
 gem 'pg'
 
-# Assets
-gem 'sprockets'
-gem 'sass'
-gem 'uglifier'
+# Frontend
 gem 'slim'
 
 # Rack gems
