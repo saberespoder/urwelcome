@@ -17,3 +17,7 @@ gem 'rack'
 gem 'rake'
 gem 'rack-cors'
 gem 'rack-contrib'
+
+group :development, :test do
+  gem 'rspec'
+end

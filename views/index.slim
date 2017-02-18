@@ -3,20 +3,7 @@
     .container
       h4
         | URWelcome is the world’s first membership platform dedicated to connecting immigrants and their families with the information, products, and services they need to thrive in a new country. Join or support the community today
-      p
-        | Stay informed!
-        br/
-        | We’ll let you know when your
-        | community is added.
-      form action="#"
-        .form-input
-          label.sr-only Name
-          input.form-control placeholder="NAME" type="text" /
-        .form-input
-          label.sr-only Email Address
-          input.form-control placeholder=("EMAIL ADDRESS") type="text" /
-        .form-input
-          button.btn.btn-lg.btn-primary type="submit"  Submit
+      == slim :cta
     /! /.container
   /! /.get-started-section
   .forums-section

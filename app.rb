@@ -9,6 +9,10 @@ class URWelcome < Sinatra::Base
     slim :index
   end
 
+  post '/signup' do
+    Member.create(name: params[:name], email: params[:email])
+  end
+
   get '/images/:file' do
     send_file('./public/assets/images/'+params[:file], :disposition => 'inline')
   end

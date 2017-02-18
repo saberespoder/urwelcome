@@ -119,9 +119,9 @@ a.callout-green {
 	color: #00a160;
 }
 .get-started-section .form-input {
-	margin: 0 15px 10px;
 	position: relative;
 }
+
 .get-started-section .form-control {
 	width: 100%;
 	height: 48px;
@@ -149,14 +149,14 @@ a.callout-green {
 	color: #00a160;
 	opacity: 1;
 }
+
 .get-started-section .btn {
-	position: absolute;
 	top: 0;
 	right: 0;
 	margin: 2px;
 	padding: 0;
 	border: 0 none;
-	width: 44px;
+	width: 100px;
 	height: 44px;
 	line-height: 44px;
 	font-size: 24px;
