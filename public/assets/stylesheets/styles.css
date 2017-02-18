@@ -333,7 +333,7 @@ a.callout-green {
 	position: relative;
 	width: 100%;
 	padding-bottom: 15px;
-	margin: 0;	
+	margin: 0;
 	top: 0;
 	left: 0;
 	bottom: auto;
@@ -529,4 +529,9 @@ a.callout-green {
 		padding-top: 15px;
 		padding-bottom: 15px;
 	}
+}
+
+.inactive-link {
+   pointer-events: none;
+   cursor: default;
 }
