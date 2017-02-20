@@ -28,9 +28,7 @@ DB = Sequel.connect(DATABASE_PATH)
 Sequel::Model.plugin :uuid
 Sequel::Model.plugin :timestamps, create: :created_at, update: :updated_at
 
-if ENV['RACK_ENV'] == 'test'
-  DB.drop_table(:members)
-end
+DB.drop_table(:members) if ENV['RACK_ENV'] == 'test' && DB.table_exists?(:members)
 
 unless DB.table_exists?(:members)
   DB.create_table! :members do
