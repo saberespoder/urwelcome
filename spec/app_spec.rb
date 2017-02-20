@@ -2,7 +2,10 @@ require 'spec_helper'
 
 RSpec.describe URWelcome do
   describe 'POST signup' do
-    subject { post '/signup', params }
+    subject do
+      allow(Pony).to receive(:mail).and_return(true)
+      post '/signup', params
+    end
 
     context 'valid params' do
       let(:params) do
