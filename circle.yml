@@ -1,0 +1,10 @@
+machine:
+  ruby:
+    version:
+      2.2.4
+  services:
+    - postgresql
+
+database:
+  override:
+    - createdb urwelcome_development
