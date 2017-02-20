@@ -25,4 +25,7 @@ $(document).ready(function() {
   });
   /* Resize END */
 
+  $('#header .nav a').on('click', function(){
+    $('#header .navbar-toggle:visible').click();
+  });
 });
