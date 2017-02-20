@@ -530,8 +530,19 @@ a.callout-green {
 		padding-bottom: 15px;
 	}
 }
-
 .inactive-link {
    pointer-events: none;
    cursor: default;
+}
+.has-error .help-block {
+	color: white;
+}
+#nameMessage {
+	font-size: 2em;
+}
+#emailMessage {
+	font-size: 2em;
+}
+.modal-body {
+	background-color: #3e5262; 
 }

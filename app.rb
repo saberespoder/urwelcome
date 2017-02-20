@@ -10,6 +10,7 @@ class URWelcome < Sinatra::Base
   end
 
   post '/signup' do
+    puts params
     Member.create(name: params[:name], email: params[:email])
     200
   end
