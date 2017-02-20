@@ -8,6 +8,13 @@ describe Member do
     }
   end
 
-  it { expect(Member.create(params)).to change(Member, :count).by(1) }
-  it { expect(Member.create({})).to_not change(Member, :count) }
+  it { expect { Member.create(params) }.to change(Member, :count).by(1) }
+
+  it 'uses UUID as primary key' do
+    expect(Member.last.uuid).to match /(\w{8}(-\w{4}){3}-\w{12}?)/
+  end
+
+  it 'has timestamps' do
+    expect(Member.last.created_at).to be_truthy
+  end
 end

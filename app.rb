@@ -10,8 +10,11 @@ class URWelcome < Sinatra::Base
   end
 
   post '/signup' do
-    puts params
     Member.create(name: params[:name], email: params[:email])
+    Pony.mail to: params[:email],
+              from: 'hello@saberespoder.com',
+              subject: 'Welcome to URWelcome!',
+              body: 'Thank you for joining! We will email you more information shortly.'
     200
   end
 
