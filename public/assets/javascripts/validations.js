@@ -32,7 +32,6 @@ $(document).ready(function() {
         }
       })
       .on('success.form.bv', function(e) {
-          $("#successModal").modal();
           $('#signup-form').data('bootstrapValidator').resetForm();
 
           // Prevent form submission
@@ -46,7 +45,7 @@ $(document).ready(function() {
 
           // Use Ajax to submit form data
           $.post($form.attr('action'), $form.serialize(), function(result) {
-              console.log(result);
+            $("#successModal").modal();
           }, 'json');
       });
 });
