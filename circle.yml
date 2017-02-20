@@ -1,0 +1,7 @@
+machine:
+  services:
+    - postgresql
+
+database:
+  override:
+    - createdb urwelcome_development
