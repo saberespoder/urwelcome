@@ -42,10 +42,10 @@ $(document).ready(function() {
 
           // Get the BootstrapValidator instance
           var bv = $form.data('bootstrapValidator');
+          
+          $("#successModal").modal();
 
           // Use Ajax to submit form data
-          $.post($form.attr('action'), $form.serialize(), function(result) {
-            $("#successModal").modal();
-          }, 'json');
+          $.post($form.attr('action'), $form.serialize(), function(result) { }, 'json');
       });
 });
