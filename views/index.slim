@@ -1,8 +1,10 @@
 #contact.main
   .get-started-section
     .container
-      h4
-        | URWelcome is the world’s first membership platform dedicated to connecting immigrants and their families with the information, products, and services they need to thrive in a new country. Join or support the community today
+      h4.row
+        .col-md-12
+          | The world’s first membership platform dedicated to connecting immigrants and their families with the information, products, and services they need to thrive. <br>
+          | Join or support the community today!
       == slim :cta
 
     /! /.container
@@ -43,49 +45,50 @@
 
   .numbers-section
     .container
-      .numbers-item
-        p
-          img alt="" src="images/reach-icon.png" /
-        p
-        p
-          | We reach over
-          br/
-          strong.large 9,000,000
-          br/
-          strong community members a year
-          br/
-          | with information that
-          br/
-          em improves their lives.
-      /! /.numbers-item
-      .numbers-item
-        p
-          img alt="" src="images/members-icon.png" /
-        p
-        p
-          | Over
-          br/
-          strong.large 500,000
-          br/
-          strong members
-          br/
-          | receive our services
-          br/
-          | every month
-          em and growing…
-      /! /.numbers-item
-      .numbers-item
-        p
-          img alt="" src="images/questions-icon.png" /
-        p
-        p
-          strong.large Thousands
-          br/
-          strong of questions asked
-          br/
-          | and answered
-          em every week.
-      /! /.numbers-item
+      .row
+        .numbers-item.col-md-4
+          p
+            img alt="" src="images/reach-icon.png" /
+          p
+          p
+            | We reach over
+            br/
+            strong.large 9,000,000
+            br/
+            strong community members a year
+            br/
+            | with information that
+            br/
+            em improves their lives.
+        /! /.numbers-item
+        .numbers-item.col-md-4
+          p
+            img alt="" src="images/members-icon.png" /
+          p
+          p
+            | Over
+            br/
+            strong.large 500,000
+            br/
+            strong members
+            br/
+            | receive our services
+            br/
+            | every month
+            em  and growing…
+        /! /.numbers-item
+        .numbers-item.col-md-4
+          p style='height: 160px;'
+            img alt="" src="images/questions-icon.png" /
+          p
+          p
+            strong.large Thousands
+            br/
+            strong of questions asked
+            br/
+            | and answered
+            em  every week.
+        /! /.numbers-item
     /! /.container
   /! /.numbers-section
 

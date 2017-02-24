@@ -1,15 +1,14 @@
 form.row action="/signup" method="POST" id='signup-form'
   fieldset
-    .col-md-2
-    .form-input.col-md-3
+    .form-input.col-md-5
       label.sr-only Name
       input#nameInput.form-control name="name" placeholder="Name" type="text" /
       span#nameMessage.help-block
-    .form-input.col-md-3
+    .form-input.col-md-5
       label.sr-only Email Address
       input#emailInput.form-control name="email" placeholder="Email" type="email" /
       span#emailMessage.help-block
-    .form-input.col-md-1
+    .form-input.col-md-2
       button.btn.btn-primary.btn-submit type="submit" Join
 
 #successModal.modal.fade role="dialog"
