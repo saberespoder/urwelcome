@@ -103,14 +103,15 @@ a.callout-green {
 	background: -moz-linear-gradient(center bottom, #647d90 0%, #3e5262 100%);
 	background: -o-linear-gradient(#3e5262, #647d90);
 }
+
 .get-started-section h4 {
 	color: #fff;
 	font-size: 2em;
 	line-height: 1.4;
 	font-weight: 700;
 	padding-bottom: 1.5em;
-	margin: 0;
 }
+
 .get-started-section a {
 	color: #d3e6ff;
 	font-style: italic;
@@ -513,6 +514,10 @@ a.callout-green {
 	background-color: #3e5262;
 }
 
+.get-started-section fieldset {
+  width: 800px;
+  margin: 0 auto;
+}
 
 /* Media Queries */
 @media only screen and (max-width: 767px) {
@@ -530,6 +535,7 @@ a.callout-green {
 		padding-bottom: 15px;
 	}
 }
+
 .inactive-link {
    pointer-events: none;
    cursor: default;
@@ -544,7 +550,7 @@ a.callout-green {
 	font-size: 2em;
 }
 .modal-body {
-	background-color: #3e5262; 
+	background-color: #3e5262;
 }
 
 .anchor {
