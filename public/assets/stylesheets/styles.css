@@ -91,6 +91,12 @@ a.callout-green {
 	background: #fff;
 }
 
+.value-prop {
+	width: 820px;
+  margin: 0 auto;
+	font-size: 1.1em;
+}
+
 /* Get Started */
 .get-started-section {
 	padding-top: 130px;
