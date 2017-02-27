@@ -540,6 +540,17 @@ a.callout-green {
 		padding-top: 15px;
 		padding-bottom: 15px;
 	}
+
+	.get-started-section fieldset {
+	  width: 300px;
+	  margin: 0 auto;
+	}
+
+	.value-prop {
+		width: 320px;
+	  margin: 0 auto;
+		font-size: 1em;
+	}
 }
 
 .inactive-link {
