@@ -5,6 +5,7 @@ ruby '2.2.4'
 gem 'sinatra'
 gem 'honeybadger', '~> 2.0'
 gem 'pony'
+gem 'heroku-deflater', group: :production # GZip
 
 # Database
 gem 'sequel'
