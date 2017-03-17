@@ -4,6 +4,8 @@ GEM
     diff-lcs (1.2.5)
     dotenv (2.1.1)
     git-version-bump (0.15.1)
+    heroku-deflater (0.6.3)
+      rack (>= 1.4.5)
     honeybadger (2.7.2)
     mail (2.6.4)
       mime-types (>= 1.16, < 4)
@@ -52,6 +54,7 @@ PLATFORMS
 
 DEPENDENCIES
   dotenv
+  heroku-deflater
   honeybadger (~> 2.0)
   pg
   pony
